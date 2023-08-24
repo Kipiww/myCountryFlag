@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    background:  #3a4452;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: auto;
+    width: 600px;
+    background: #fff;
+    padding: 20px;  
+    text-align: center;
+    border-radius: 10px;
+}
+
+/*title*/
+.title{color: #3a4452;font-size: 30px;}
+
+/*input div*/
+
+.inputField{margin-top: 20px;}
+.inputField input{border: none; outline: none;border-bottom: #3a4452 1px solid;width: 50%;padding: 5px;}
+.inputField input::placeholder{text-align: center;}
+.inputField button{background: #3a4452;color: #fff;padding: 6px;border-radius: 10px;border: none;cursor: pointer;}
+.inputField button:hover{background: #33ffd8;transition: .2s;}
+.inputField input,.inputField button {margin: 0px 5px;}
+
+/*resultField*/
+.result{padding: 10px;}
+.result img{height: 150px;width: 300px;margin-top: 10px;}
+.result h2{font-size: 25px; margin-top: 5px;}
+
+/*info*/
+.info{text-align: left;margin-top: 10px;font-size: 15px;font-family: sans-serif;}
+.info p{margin: 5px 0px;}
+
+/*responsive to mobile devices*/ 
+@media (650px >= width ) and (orientation: portrait) {
+    .container{height: auto;width: 400px;background: #fff;}
+    .title{font-size: 20px;}
+    .result img{height: 130px;width: 250px;margin-top: 10px;}
+}
+@media (423px >= width ) and (orientation: portrait) {
+    body{padding: 0;}
+    .container{height: 100%;width: 400px;background: #fff; border-radius: 0px;}
+    
+    /*input div*/
+    .title{font-size: 15px;}
+    .inputField{margin-top: 10px;}
+    .inputField input{font-size: 12px;}
+    .inputField input::placeholder{font-size: 12px;}
+    .inputField button{font-size: 10px;}
+
+    /*resultField*/
+    .result{padding: 5px;}
+    .result img{height: 100px;width: 150px;margin-top: 10px;}
+    .result h2{font-size: 15px; margin-top: 5px;}
+
+    /*info*/
+    .info{font-size: 10px;margin-top: 40px;}
+    .info p{margin: 5px 0px;}
+}
+@media (200px >= width ) and (orientation: portrait){
+    body{padding: 0px;}
+    .container{height: 635px;width: 200px;background: #fff; border-radius: 0px;margin-bottom: 0px}
+    /*input div*/
+    .title{font-size: 15px;}
+    .inputField{margin-top: 10px;}
+    .inputField input{font-size: 12px;}
+    .inputField input::placeholder{font-size: 12px;}
+    .inputField button{font-size: 10px;}
+
+    /*resultField*/
+    .result{padding: 5px;}
+    .result img{height: 70px;width: 150px;margin-top: 10px;}
+    .result h2{font-size: 15px; margin-top: 5px;}
+
+    /*info*/
+    .info{font-size: 10px;margin-top: 40px;}
+    .info p{margin: 5px 0px;}
+}
